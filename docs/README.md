@@ -1,6 +1,6 @@
 # pyomarker
 
-Version 0.0.1.dev3
+Version 0.0.1.dev4
 
 ![Pyomarker logo](https://github.com/ICR-Computational-Imaging/pyomarker/blob/main/docs/assets/logo.png?raw=true)
 
