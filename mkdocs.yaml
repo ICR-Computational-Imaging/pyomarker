@@ -2,7 +2,6 @@
 
 # Include the version in the title. Needs to be under bumpversion control.
 site_name: pyomarker documentation v0.0.1.dev1
-site_url:
 repo_url: https://github.com/ICR-Computational-Imaging/pyomarker
 docs_dir: docs
 
