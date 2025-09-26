@@ -1,0 +1,61 @@
+# This provides set up for mkdocs docs generation.
+
+# Include the version in the title. Needs to be under bumpversion control.
+site_name: pyomarker documentation v0.0.1.dev1
+site_url:
+repo_url: https://github.com/ICR-Computational-Imaging/pyomarker
+docs_dir: docs
+
+# Copyright
+copyright: Copyright &copy; Institute of Cancer Research
+edit_uri: edit/main/docs
+use_directory_urls: false
+theme:
+  name: material  # This theme is available through "mkdocs materials" extension.
+  locale: en
+  logo: assets/logo.png
+  highlightjs: true
+  favicon: assets/logo/favicon.ico
+  hljs_languages:
+      - python
+      - json
+      - console
+      - javascript
+      - typescript
+      - dockerfile
+      - bash
+      - shell
+      - sh
+  palette:
+    - scheme: default  # The color scheme to use.
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [ "pyomarker" ]
+
+# Documentation extensions.
+markdown_extensions:
+  - pymdownx.highlight:  # See: https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - attr_list  # Attribute lists, used here for images.
+  - md_in_html  # Markdown in HTML for adding markdown syntax to HTML, used here for images.
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: ["."] # Root of the repository
+
+# The page tree. This links the layout of the generated docs site to the page contents.
+nav:
+  - Home: README  # Where the home page of the docs will be stored.

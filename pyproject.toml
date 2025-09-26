@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyomarker"
+version = "0.0.1.dev1"
+dynamic = ["dependencies"]
+requires-python = ">=3.8"
+authors = [
+  {name = "Matthew D Blackledge", email = "matthew.blackledge@icr.ac.uk"},
+]
+maintainers = [
+  {name = "Matthew D Blackledge", email = "matthew.blackledge@icr.ac.uk"},
+]
+description = "A library of tools and functionality for frequentist and Bayesian imaging biomarker analysis."
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = [
+    "Bayesian Modelling",
+    "Biomarkers",
+    "Image Processing",
+    "Medical Imaging",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English"
+]
+
+[project.optional-dependencies]
+test = [ "pytest>=8",
+         "pytest-html",
+         "pytest-cov",
+]
+
+[project.urls]
+Homepage = "https://github.com/ICR-Computational-Imaging/pyomarker"
+Issues = "https://github.com/ICR-Computational-Imaging/pyomarker/issues"
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["pyomarker"]

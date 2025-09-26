@@ -68,7 +68,7 @@ instance/
 # Scrapy stuff:
 .scrapy
 
-# Sphinx documentation
+# Sphinx docs
 docs/_build/
 
 # PyBuilder
@@ -151,7 +151,7 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
-# mkdocs documentation
+# mkdocs docs
 /site
 
 # mypy
@@ -205,3 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# OSX files
+.DS_Store
+
+# PyCharm files
+.idea/
