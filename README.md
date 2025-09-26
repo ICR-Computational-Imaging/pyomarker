@@ -5,7 +5,7 @@
 # pyomarker
 
 [![PyPI version](https://img.shields.io/pypi/v/pyomarker?color=blue)](https://pypi.org/project/pyomarker/)
-[![License](https://img.shields.io/pypi/l/pyomarker)](https://github.com/ICR-Computational-Imaging/pyomarker/blob/main/LICENSE.txt)
+[![License](https://img.shields.io/pypi/l/pyomarker)](https://github.com/ICR-Computational-Imaging/pyomarker/blob/main/LICENSE.md)
 
 A library of tools and functionality for frequentist and Bayesian imaging biomarker analysis.
 
