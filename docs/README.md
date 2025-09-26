@@ -1,7 +1,23 @@
-# pyomarker v0.0.1.dev5
+<p align="center">
+  <img src="https://github.com/ICR-Computational-Imaging/pyomarker/blob/main/docs/assets/logo.png?raw=true" alt="Pyomarker logo" width="200"/>
+</p>
 
-![Pyomarker logo](https://github.com/ICR-Computational-Imaging/pyomarker/blob/main/docs/assets/logo.png?raw=true)
+# pyomarker
+
+[![PyPI version](https://img.shields.io/pypi/v/pyomarker?color=blue)](https://pypi.org/project/pyomarker/)
+[![License](https://img.shields.io/pypi/l/pyomarker)](https://github.com/ICR-Computational-Imaging/pyomarker/blob/main/LICENSE.txt)
 
 A library of tools and functionality for frequentist and Bayesian imaging biomarker analysis.
 
-__Note:__ This project is still under development.
+---
+
+> ℹ️ **Info**  
+> This project is still under development. At the moment it is a no-op.  
+> If you would like more information about releases, please [contact me](mailto:matthew.blackledge@icr.ac.uk).
+
+---
+
+## Installation
+
+```bash
+pip install pyomarker
