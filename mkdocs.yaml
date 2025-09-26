@@ -57,4 +57,4 @@ markdown_extensions:
 
 # The page tree. This links the layout of the generated docs site to the page contents.
 nav:
-  - Home: README  # Where the home page of the docs will be stored.
+  - Home: README.md  # Where the home page of the docs will be stored.
