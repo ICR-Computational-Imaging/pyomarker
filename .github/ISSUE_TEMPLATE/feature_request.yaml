@@ -1,0 +1,76 @@
+name: Feature Request
+description: Suggest a new feature or enhancement for pyomarker
+title: "Feature: "
+labels: ["feature_request"]
+assignees:
+  - mdblackledge
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature for **pyomarker**!  
+        Please provide as much detail as possible so we can understand your needs.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: dropdown
+    id: feature-area
+    attributes:
+      label: Feature Area
+      description: Which part of pyomarker would this feature affect?
+      options:
+        - Core analysis
+        - Bayesian modelling
+        - Imaging biomarkers
+        - Documentation
+        - Other / Not Sure
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: pyomarker-version
+    attributes:
+      label: pyomarker Version
+      description: What version of pyomarker are you using?
+      placeholder: "0.0.1.dev6"
+    validations:
+      required: true
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: What would you like to see?
+      description: |
+        Please describe the new feature or enhancement you’d like to request.
+      placeholder: |
+        **Short description**
+        What new functionality should be added?
+
+        **Why is this important?**
+        How would this improve pyomarker for your use case?
+
+        **Workarounds**
+        Have you been using any workaround so far?
+
+        **Urgency**
+        How critical is this feature for you?
+
+        **Collaboration**
+        Would you be willing to help develop or test this functionality?
+
+        **Additional context**
+        Any extra information, screenshots, or references.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/ICR-Computational-Imaging/pyomarker/blob/main/docs/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

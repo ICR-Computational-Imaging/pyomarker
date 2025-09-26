@@ -53,8 +53,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.snippets:
-      base_path: ["."] # Root of the repository
+      base_path: [".."] # Root of the repository
 
 # The page tree. This links the layout of the generated docs site to the page contents.
 nav:
-  - Home: README.md  # Where the home page of the docs will be stored.
+  - Home: index.md  # Where the home page of the docs will be stored.

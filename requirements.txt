@@ -5,8 +5,3 @@ tqdm
 mkdocs
 pylint
 bump2version
-mkdocs
-mkdocs-material
-mkdocstrings
-pymdown-extensions
-mkdocstrings-python

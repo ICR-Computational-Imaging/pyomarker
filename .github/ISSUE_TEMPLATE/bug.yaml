@@ -1,0 +1,71 @@
+name: Bug Report
+description: File a bug report
+title: "Bug: "
+labels: ["bug"]
+assignees:
+  - mdblackledge
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What steps could we use to reproduce the bug?
+      placeholder: |
+        1. Run command `...`
+        2. See error `...`
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: It should have...
+    validations:
+      required: false
+  - type: input
+    id: python-version
+    attributes:
+      label: Python Version
+      placeholder: e.g. 3.10.12
+    validations:
+      required: true
+  - type: input
+    id: package-version
+    attributes:
+      label: pyomarker Version
+      placeholder: "0.0.1.dev6"
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating System
+      description: What operating system are you using?
+      options:
+        - MACOS x86_64 (Intel)
+        - MACOS arm64 (Apple Silicon)
+        - Linux
+        - Windows
+      default: 0
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/ICR-Computational-Imaging/pyomarker/blob/main/docs/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

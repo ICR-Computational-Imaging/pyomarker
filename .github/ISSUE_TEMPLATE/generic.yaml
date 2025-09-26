@@ -1,0 +1,72 @@
+name: Generic Issue
+description: A generic issue report or request for pyomarker
+title: "Generic issue: "
+labels: ["generic"]
+assignees:
+  - mdblackledge
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to submit an issue for **pyomarker**!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: dropdown
+    id: issue-scope
+    attributes:
+      label: Scope
+      description: Which area of pyomarker does this issue relate to?
+      options:
+        - Core functionality
+        - Bayesian modelling
+        - Imaging biomarkers
+        - Documentation
+        - Build / Packaging
+        - Other / Not Sure
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: pyomarker-version
+    attributes:
+      label: pyomarker Version
+      description: What version of pyomarker are you using?
+      placeholder: "0.0.1.dev6"
+    validations:
+      required: false
+  - type: textarea
+    id: issue-text
+    attributes:
+      label: Issue Details
+      description: |
+        Provide as much detail as possible about your issue, suggestion, or request.
+      placeholder: |
+        **Description**
+        Summarize the issue or request clearly.
+
+        **Steps to Reproduce (if applicable)**
+        1. ...
+        2. ...
+        3. ...
+
+        **Expected Behavior**
+        What did you expect to happen?
+
+        **Additional Context**
+        Any extra information, logs, or screenshots that might help.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/ICR-Computational-Imaging/pyomarker/blob/main/docs/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
