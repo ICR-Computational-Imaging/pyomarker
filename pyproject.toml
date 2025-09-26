@@ -15,7 +15,7 @@ maintainers = [
 ]
 description = "A library of tools and functionality for frequentist and Bayesian imaging biomarker analysis."
 readme = "README.md"
-license = {file = "LICENSE.txt"}
+license = {file = "LICENSE.md"}
 keywords = [
     "Bayesian Modelling",
     "Biomarkers",
