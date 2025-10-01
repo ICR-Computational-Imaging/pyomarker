@@ -5,3 +5,4 @@ tqdm
 mkdocs
 pylint
 bump2version
+scipy
