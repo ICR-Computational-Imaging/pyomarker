@@ -6,11 +6,11 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/pyomarker?color=blue)](https://pypi.org/project/pyomarker/)
 [![License](https://img.shields.io/pypi/l/pyomarker)](https://github.com/ICR-Computational-Imaging/pyomarker/blob/main/LICENSE.md)
-[![Tests](https://github.com/ICR-Computational-Imaging/pyomarker/actions/workflows/test_publish.yml/badge.svg)](
-https://github.com/ICR-Computational-Imaging/pyomarker/actions/workflows/test_publish.yml
+[![Tests](https://github.com/ICR-Computational-Imaging/pyomarker/actions/workflows/test_publish.yaml/badge.svg)](
+https://github.com/ICR-Computational-Imaging/pyomarker/actions/workflows/test_publish.yaml
 )
-[![Docs](https://github.com/ICR-Computational-Imaging/pyomarker/actions/workflows/deploy_docs.yml/badge.svg)](
-https://github.com/ICR-Computational-Imaging/pyomarker/actions/workflows/deploy_docs.yml
+[![Docs](https://github.com/ICR-Computational-Imaging/pyomarker/actions/workflows/deploy_docs.yaml/badge.svg)](
+https://icr-computational-imaging.github.io/pyomarker/
 )
 
 **Bayesian and classical methods for quantitative imaging biomarker reliability and uncertainty.**
@@ -21,18 +21,14 @@ Bayesian tools for analysing test–retest data, estimating measurement reliabil
 uncertainty in imaging biomarker studies. It leverages Hamiltonian Monte Carlo sampling of parameter
 posterior distributions through the [Stan probabilistic programming framework](https://mc-stan.org/).
 
----
-
-> ⚠️ **Development status**  
-> pyomarker is under active development. APIs may change.
-> If you would like more information about upcoming releases, please [contact me](mailto:matthew.blackledge@icr.ac.uk).
-
----
-
 ### Key features
 - Classical repeatability metrics (Bland–Altman, ICC, CoV)
 - Bayesian models for uncertainty-aware biomarker analysis
 - Designed for quantitative imaging workflows
+
+> ⚠️ **Development status**  
+> pyomarker is under active development. APIs may change.
+> If you would like more information about upcoming releases, please [contact me](mailto:matthew.blackledge@icr.ac.uk).
 
 ## Installation
 
