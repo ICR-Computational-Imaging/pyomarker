@@ -38,10 +38,12 @@ plugins:
       default_handler: python
       handlers:
         python:
-          paths: [ "pyomarker" ]
+          paths: [ "." ]
 
 # Documentation extensions.
 markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.highlight:  # See: https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
       anchor_linenums: true
       line_spans: __span
@@ -53,8 +55,16 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.snippets:
-      base_path: [".."] # Root of the repository
+      base_path: ["."] # Root of the repository
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 # The page tree. This links the layout of the generated docs site to the page contents.
 nav:
   - Home: index.md  # Where the home page of the docs will be stored.
+  - API:
+    - Models:
+      - Test/Retest:
+        - Bland-Altman: api/models/test_retest/bland_altman.md
