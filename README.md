@@ -12,7 +12,7 @@ A library of tools and functionality for frequentist and Bayesian imaging biomar
 ---
 
 > ℹ️ **Info**  
-> This project is still under development. At the moment it is a no-op.  
+> This project is still under development.  
 > If you would like more information about releases, please [contact me](mailto:matthew.blackledge@icr.ac.uk).
 
 ---
@@ -22,3 +22,7 @@ A library of tools and functionality for frequentist and Bayesian imaging biomar
 ```bash
 pip install pyomarker
 ```
+
+## Examples
+Please check out the [examples page](https://github.com/ICR-Computational-Imaging/pyomarker/tree/main/examples) to
+see how to implement these tools within your own biomarker projects.

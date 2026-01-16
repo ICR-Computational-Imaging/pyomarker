@@ -1,5 +1,3 @@
-# Copyright (c) 2023 Matthew D Blackledge.
-
 """ Functionality for fitting a Dirichlet mixture model """
 
 import math
@@ -11,7 +9,7 @@ from scipy.stats import dirichlet
 from scipy.special import digamma, polygamma
 from scipy.optimize import minimize
 
-from .coordinate_conversions import polar2cartesian, cartesian2polar
+from coordinate_conversions import polar2cartesian, cartesian2polar
 
 
 class DirichletMixture:
